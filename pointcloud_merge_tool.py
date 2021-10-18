@@ -82,7 +82,7 @@ def demo_manual_registration(source, target):
         source, target, threshold, trans_init,
         o3d.pipelines.registration.TransformationEstimationPointToPoint())
     draw_registration_result(source, target, reg_p2p.transformation)
-    print("")
+    print(reg_p2p.transformation)
 
 
 if __name__ == "__main__":
